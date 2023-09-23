@@ -1,0 +1,30 @@
+@font-face {
+   font-family: "Inclusive Sans";
+   src:
+      url("../fonts/inclusivesans-italic-webfont.woff2") format("woff2"),
+      url("../fonts/inclusivesans-italic-webfont.woff") format("woff");
+   font-weight: normal;
+   font-style: italic;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Inclusive Sans";
+   src:
+      url("../fonts/inclusivesans-regular-webfont.woff2") format("woff2"),
+      url("../fonts/inclusivesans-regular-webfont.woff") format("woff");
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+
+@font-face {
+   font-family: "Croissant One";
+   src:
+      url("../fonts/croissantone-regular-webfont.woff2") format("woff2"),
+      url("../fonts/croissantone-regular-webfont.woff") format("woff");
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}

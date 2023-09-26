@@ -9,7 +9,11 @@ body{
    color: #7D7D7D;
 }
 
-
+.link{
+   color: #0fa671;
+   text-decoration: underline;
+   line-height: 1.5;
+}
 
 .container {
    max-width: 702px;

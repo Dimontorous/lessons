@@ -1,0 +1,356 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+
+body {
+   font-family: "Inter", sans-serif;
+   font-size: 18px;
+   color: #7D7D7D;
+}
+
+.header{
+   margin-bottom: 100px;
+}
+.link-list{
+   display: inline-block;
+   text-decoration: underline;
+   color: aqua;
+   margin: 50px;
+   font-size: 30px;
+}
+.link-list li{
+   margin-bottom: 20px;
+}
+.main-title{
+   margin: 0 auto;
+   color: #8A33FD;
+   font-size: 70px;
+   font-weight: 500;
+   text-transform: capitalize;
+   max-width: 700px;
+   border: 3px dotted rgb(10, 225, 142);
+   outline: 2px solid rgb(47, 120, 255);
+   border-radius: 10px;
+   text-align: center;
+   box-shadow: inset 2px 2px 1px darkblue;
+}
+
+.licencing {
+   margin: 0 auto;
+   max-width: 1238px;
+   padding: 0 10px;
+   margin-bottom: 100px;
+}
+
+.block-title {
+   max-width: 206px;
+   margin: 0 auto;
+}
+
+.block-title-img {
+   vertical-align: middle;
+}
+
+.title-text {
+   color: #37393F;
+   display: inline-block;
+   font-weight: 500;
+}
+
+.licencing-title {
+   font-family: "Poppins", sans-serif;
+   text-align: center;
+   font-size: 60px;
+   color: #37393F;
+   font-weight: 700;
+   line-height: 1.21;
+   margin-bottom: 70px;
+}
+
+.icons {
+   font-family: "Poppins", sans-serif;
+   font-size: 40px;
+   font-weight: 700;
+   line-height: 1.21;
+   color: #37393F;
+   margin-bottom: 11px;
+}
+
+.icons-text {
+   margin-bottom: 32px;
+   line-height: 1.47;
+}
+
+.icons-sub-title {
+   font-family: "Poppins", sans-serif;
+   font-size: 30px;
+   font-weight: 700;
+   color: #37393F;
+   margin-bottom: 100px;
+}
+
+.icons-sub-title span {
+   color: #40DDB6;
+   font-weight: 400;
+   display: inline-block;
+   margin-left: 15px;
+}
+
+.photography-title {
+   font-family: "Poppins", sans-serif;
+   font-size: 40px;
+   font-weight: 700;
+   line-height: 1.21;
+   color: #37393F;
+   margin-bottom: 11px;
+}
+
+.photography-text {
+   margin-bottom: 24px;
+   line-height: 1.47;
+}
+
+.pixels-title {
+   font-size: 30px;
+   font-family: "Poppins", sans-serif;
+   font-weight: 700;
+   color: #37393F;
+   margin-bottom: 8px;
+}
+
+.pixels-title span {
+   font-weight: 400;
+   color: #40DDB6;
+   display: inline-block;
+   margin-left: 15px;
+}
+
+.pixels-title-text {
+   line-height: 1.47;
+   color: #40DDB6;
+   margin-bottom: 24px;
+}
+
+.unsplash-title {
+   font-family: "Poppins", sans-serif;
+   font-size: 30px;
+   font-weight: 700;
+   color: #37393F;
+   margin-bottom: 8px;
+}
+
+.unsplash-title span {
+   font-weight: 400;
+   color: #40DDB6;
+   display: inline-block;
+   margin-left: 15px;
+}
+
+.unsplash-title-text {
+   line-height: 1.47;
+   color: #40DDB6;
+   margin-bottom: 100px;
+}
+
+.fonts-title {
+   margin-bottom: 11px;
+   font-size: 40px;
+   line-height: 1.21;
+   font-family: "Poppins", sans-serif;
+   font-weight: 700;
+   color: #37393F;
+}
+
+.fonts-title-text {
+   line-height: 1.47;
+}
+
+.fonts-title-text span {
+   font-weight: 500;
+   color: #40DDB6;
+}
+
+
+
+
+.project-information {
+   max-width: 850px;
+   margin: 0 auto;
+   margin-bottom: 100px;
+   padding: 0 10px;
+}
+
+.project-title {
+   font-family: "Poppins", sans-serif;
+   font-weight: 700;
+   font-size: 40px;
+   color: #37393F;
+   line-height: 1.27;
+   margin-bottom: 13px;
+}
+
+.project-text {
+   line-height: 1.47;
+   margin-bottom: 35px;
+}
+
+.project-text p {
+   margin-bottom: 25px;
+}
+
+.project-list {
+   margin-bottom: 35px;
+   font-weight: 500;
+   display: inline-block;
+}
+
+.project-list li {
+   margin-bottom: 25px;
+   margin-left: 16px;
+}
+
+.project-list div {
+   display: inline-block;
+   border-radius: 50%;
+   border: 5px solid #7D7D7D;
+   vertical-align: middle;
+   margin-right: 10px;
+}
+
+.project-list-ordered {
+   margin-bottom: 35px;
+   font-weight: 500;
+}
+
+.project-list-ordered li {
+   margin-bottom: 25px;
+   margin-left: 16px;
+}
+
+
+
+
+.clothing {
+   max-width: 1260px;
+   margin: 0 auto;
+   color: #807D7E;
+   font-family: "Causten", sans-serif;
+   font-size: 20px;
+   padding: 0 10px;
+}
+
+.span{
+   border-left: 6px solid #8A33FD;
+   font-size: 28px;
+   border-radius: 10px;
+   margin-right: 15px;
+}
+.clothing-title {
+   font-family: "Core Sans C", sans-serif;
+   font-size: 28px;
+   font-weight: 600;
+   color: #3C4242;
+   line-height: 1.2;
+   display: inline-block;
+   margin-bottom: 30px;
+}
+.clothing-block {
+   max-width: 1198px;
+   padding: 0 21px;
+}
+.sub-title {
+   font-family: "Core Sans C", sans-serif;
+   font-weight: 600;
+   line-height: 1.67;
+   margin-bottom: 25px;
+}
+.sub-title-text {
+   margin-bottom: 20px;
+   line-height: 1.67;
+}
+.sub-title-text p{
+   margin-bottom: 20px;
+}
+
+
+
+
+.jewellery {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 10px;
+   font-family: "Cormorant Infant", serif;
+   font-weight: 700;
+   margin-bottom: 100px;
+}
+.text {
+   max-width: 503px;
+   display: inline-block;
+   vertical-align: middle;
+   margin-right: 75px;
+}
+.text-sub-title {
+   font-size: 20px;
+   line-height: 1;
+   color: #D58417;
+   margin-bottom: 27px;
+   text-transform: uppercase;
+
+}
+.text-title {
+   font-size: 64px;
+   line-height: 1;
+   color: black;
+   margin-bottom: 31px;
+   text-transform: capitalize;
+}
+.text-title-text {
+   font-size: 30px;
+   line-height: 1.4;
+   color: #606060;
+}
+
+.img-one {
+   display: inline-block;
+   vertical-align: middle;
+   margin-right: 30px;
+}
+.img-one img{
+   margin-left: -187px;
+   margin-top: 14px;
+   width: 177px;
+   height: 336px;
+   border-radius: 235px;
+}
+
+
+ .img-span-one {
+   display: inline-block;
+   border: 1px solid #502203;
+   width: 177px;
+   height: 336px;
+   border-radius: 235px;
+   vertical-align: middle;
+ }
+
+
+.img-two{
+   display: inline-block;
+   vertical-align: middle;
+}
+.img-two img{
+   margin-left: -318px;
+   margin-top: 19px;
+   width: 307px;
+   height: 500px;
+   border-radius: 235px;
+}
+.img-span-two {
+   display: inline-block;
+   border: 1px solid #502203;
+   width: 307px;
+   height: 500px;
+   border-radius: 235px;
+   vertical-align: middle;
+}

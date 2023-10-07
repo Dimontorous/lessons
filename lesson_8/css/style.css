@@ -1,0 +1,333 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+
+body {
+   font-family: "Inter", sans-serif;
+   font-size: 18px;
+   color: #7D7D7D;
+}
+
+.header {
+   margin-bottom: 100px;
+}
+
+.business {
+   max-width: 703px;
+   margin: 0 auto 100px;
+   padding: 0 15px;
+}
+
+.business-sub-title {
+   background: url("../img/square.png") 0 5px no-repeat;
+   color: #37393F;
+   font-weight: 500;
+   margin-bottom: 16px;
+   text-transform: capitalize;
+   padding-left: 18px;
+   line-height: 1.2;
+}
+
+.title {
+   font-family: "Poppins", sans-serif;
+   font-size: 40px;
+   color: #37393F;
+   font-weight: 700;
+   line-height: 1.21;
+   margin-bottom: 20px;
+   text-transform: capitalize;
+}
+
+.title-text p {
+   margin-bottom: 15px;
+}
+
+.title-text {
+   line-height: 1.46;
+   margin-bottom: 20px;
+}
+
+.title-list li {
+   background: url("../img/check-mark.svg") 0 3px no-repeat;
+   min-height: 27px;
+   line-height: 1.65;
+   margin-bottom: 23px;
+   padding-left: 35px;
+}
+
+.title-list {
+   margin-bottom: 43px;
+   font-size: 20px;
+   font-family: "Poppins", sans-serif;
+   color: #37393F;
+}
+
+.about-us {
+   margin-bottom: 37px;
+   font-size: 16px;
+}
+
+.experience {
+   background: url("../img/experience.svg") 32px 32px no-repeat;
+   display: inline-block;
+   max-width: 296px;
+   padding: 31px 32px 32px 90px;
+   margin-right: 21px;
+   border: 1px solid#E3E3E3;
+}
+
+.experience h5 {
+   color: #37393F;
+   font-family: "Poppins", sans-serif;
+   font-size: 20px;
+   font-weight: 600;
+   margin-bottom: 3px;
+   line-height: 1.5;
+   text-transform: capitalize;
+}
+
+.experience-text {
+   line-height: 1.35;
+}
+
+.awards {
+   background: url("../img/awards.svg") 37px 32px no-repeat;
+   display: inline-block;
+   max-width: 297px;
+   padding: 31px 32px 32px 95px;
+   border: 1px solid#E3E3E3;
+}
+
+.awards h5 {
+   color: #37393F;
+   font-family: "Poppins", sans-serif;
+   font-size: 20px;
+   font-weight: 600;
+   margin-bottom: 3px;
+   line-height: 1.5;
+   text-transform: capitalize;
+}
+
+.awards-text {
+   line-height: 1.35;
+}
+
+.button {
+   display: inline-block;
+   max-width: 184px;
+   padding: 21px 27px;
+   background-color: rgba(107, 119, 229, 1);
+   line-height: 1.2;
+   color: white;
+   font-size: 18px;
+   font-weight: 600;
+   text-transform: capitalize;
+}
+
+
+
+
+.discover {
+   max-width: 1308px;
+   margin: 0 auto 100px;
+   padding: 10px;
+}
+
+.discover-head {
+   max-width: 882px;
+   padding: 0 15px;
+   margin: 0 auto 47px;
+}
+
+.discover-sub-title {
+   background: url("../img/square.png") 352px 5px no-repeat;
+   margin-bottom: 14px;
+   font-weight: 500;
+   color: #37393F;
+   text-transform: capitalize;
+   line-height: 1.2;
+   padding-left: 370px;
+}
+
+.discover-title {
+   text-align: center;
+   margin-bottom: 14px;
+   font-family: "Poppins", sans-serif;
+   font-size: 40px;
+   font-weight: 700;
+   color: #37393F;
+   line-height: 1.21;
+}
+
+.discover-text {
+   max-width: 100%;
+   line-height: 1.47;
+   text-align: center;
+}
+
+.discover-text p {
+   margin-bottom: 20px;
+}
+
+.card-block {
+   max-width: 100%;
+   margin: 0 auto;
+
+}
+
+.card-title {
+   font-family: "Poppins", sans-serif;
+   color: #37393F;
+   font-size: 29px;
+   line-height: 1.27;
+   font-weight: 600;
+}
+
+.card-sub-title {
+   background: url("../img/calendar.svg") no-repeat;
+   line-height: 1.46;
+   font-size: 14px;
+   padding-left: 22px;
+}
+
+.card {
+   display: inline-block;
+   min-width: 384px;
+   margin: 0 34px 58px 0;
+   height: 582px;
+   padding-top: 502px;
+}
+
+.card-one {
+   background: url("../img/discover-img-one.png") no-repeat;
+}
+
+.card-two {
+   background: url("../img/discover-img-two.png") no-repeat;
+}
+
+.card-three {
+   background: url("../img/discover-img-three.png") no-repeat;
+}
+
+.card-four {
+   background: url("../img/discover-img-four.png") no-repeat;
+}
+
+.card-five {
+   background: url("../img/discover-img-five.png") no-repeat;
+}
+
+.card-six {
+   background: url("../img/discover-img-six.png") no-repeat;
+}
+
+
+
+
+
+.clothing {
+   max-width: 1270px;
+   margin: 0 auto 100px;
+   color: #807D7E;
+   font-family: "Causten", sans-serif;
+   font-size: 20px;
+   padding: 0 15px;
+}
+
+
+
+.clothing-title {
+   font-family: "Core Sans C", sans-serif;
+   font-size: 28px;
+   font-weight: 600;
+   color: #3C4242;
+   line-height: 1.2;
+   display: inline-block;
+   margin-bottom: 30px;
+   background: url("../img/decor-title.png") no-repeat;
+   padding-left: 21px;
+}
+
+
+.sub-title {
+   font-family: "Core Sans C", sans-serif;
+   font-weight: 600;
+   line-height: 1.67;
+   margin-bottom: 25px;
+   padding-left: 21px;
+}
+
+.sub-title-text {
+   margin-bottom: 20px;
+   line-height: 1.67;
+   padding-left: 21px;
+}
+
+.sub-title-text p {
+   margin-bottom: 20px;
+}
+
+.sub-title-text span {
+   font-size: 20px;
+   font-weight: 700;
+   line-height: 1.67;
+}
+
+
+
+
+
+.euphoria {
+   max-width: 1270px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+.euphoria-content {
+   display: inline-block;
+   background: url("../img/euphoria-one-img.jpg") no-repeat,
+      url("../img/euphoria-two-img.png") right top no-repeat;
+   border-radius: 8px;
+}
+
+.euphoria-content-text {
+   max-width: 50%;
+   display: inline-block;
+   padding: 183px 74px 174px 74px;
+}
+
+.euphoria-title {
+   font-family: "Core Sans C", sans-serif;
+   color: white;
+   font-size: 34px;
+   font-weight: 800;
+   line-height: 1.47;
+   text-transform: uppercase;
+   margin-bottom: 30px;
+}
+
+.euphoria-text {
+   color: white;
+   font-size: 20px;
+   font-family: "Causten";
+   font-weight: 300;
+   letter-spacing: 1px;
+   margin-bottom: 50px;
+}
+
+
+.button {
+   display: inline-block;
+   text-transform: capitalize;
+   color: #3C4242;
+   font-size: 18px;
+   font-family: Causten;
+   font-weight: 600;
+   max-width: 168px;
+   max-height: 46px;
+   border-radius: 8px;
+   padding: 12px 44px;
+   background-color: white;
+}

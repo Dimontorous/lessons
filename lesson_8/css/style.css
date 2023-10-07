@@ -288,7 +288,7 @@ body {
 .euphoria-content {
    display: inline-block;
    background: url("../img/euphoria-one-img.jpg") no-repeat,
-      url("../img/euphoria-two-img.png") right top no-repeat;
+      url("../img/euphoria-two-img.png") 614px 0 no-repeat;
    border-radius: 8px;
 }
 

@@ -13,6 +13,67 @@ body {
    margin-bottom: 100px;
 }
 
+.main-title {
+   font-size: 80px;
+   text-align: center;
+   color: green;
+   background-color: aqua;
+   max-width: 800px;
+   margin: 0 auto;
+   text-shadow: 2px 3px 2px rebeccapurple;
+   box-shadow: inset 3px 4px 3px royalblue;
+   margin-bottom: 50px;
+}
+
+.link {
+   display: inline-block;
+   font-size: 25px;
+   color: rgb(11, 117, 210);
+   text-shadow: 2px 2px 2px #000;
+   padding: 15px;
+}
+
+.link li {
+   margin-bottom: 10px;
+   background: url("../img/check-mark.svg") no-repeat;
+   padding: 0 40px;
+   min-height: 27px;
+   text-transform: capitalize;
+}
+
+
+.practice {
+   background-color: rgba(4, 201, 17, 0.8604691876750701);
+   margin-bottom: 100px;
+   height: 1000px;
+}
+
+.practice-one {
+   height: 200px;
+   background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(89, 46, 6, 0.8128501400560224) 13%,
+    rgba(9, 9, 121, 0.891281512605042) 31%, rgba(130, 8, 138, 1) 49%, rgba(7, 153, 154, 1) 65%, 
+    rgba(4, 201, 17, 0.8604691876750701) 81%, rgba(0, 212, 255, 1) 100%);
+    background-position: 40px ;
+}
+.practice-two{
+   height: 200px;
+   background-image: url("../img/check-mark.svg");
+   background-position: 0 0 ;
+   background-repeat: repeat-x;
+   background-color: rgb(210, 11, 104);
+   background-size: auto 50%;
+}
+.practice-three{
+   height: 600px;
+   background: url("../img/discover-img-one.png") 40px 50px / auto no-repeat fixed;
+}
+
+
+
+
+
+
+
 .business {
    max-width: 703px;
    margin: 0 auto 100px;
@@ -113,7 +174,7 @@ body {
    line-height: 1.35;
 }
 
-.button {
+.businnes-button {
    display: inline-block;
    max-width: 184px;
    padding: 21px 27px;
@@ -129,9 +190,9 @@ body {
 
 
 .discover {
-   max-width: 1308px;
+   max-width: 1250px;
    margin: 0 auto 100px;
-   padding: 10px;
+   padding: 15px;
 }
 
 .discover-head {
@@ -166,9 +227,7 @@ body {
    text-align: center;
 }
 
-.discover-text p {
-   margin-bottom: 20px;
-}
+
 
 .card-block {
    max-width: 100%;
@@ -179,7 +238,7 @@ body {
 .card-title {
    font-family: "Poppins", sans-serif;
    color: #37393F;
-   font-size: 29px;
+   font-size: 20px;
    line-height: 1.27;
    font-weight: 600;
 }
@@ -193,10 +252,11 @@ body {
 
 .card {
    display: inline-block;
-   min-width: 384px;
-   margin: 0 34px 58px 0;
+   max-width: 656px;
+   margin-left: 34px;
    height: 582px;
    padding-top: 502px;
+   padding-right: 160px;
 }
 
 .card-one {
@@ -281,22 +341,20 @@ body {
 
 .euphoria {
    max-width: 1270px;
-   margin: 0 auto;
+   margin: 0 auto 100px;
    padding: 0 15px;
-}
-
-.euphoria-content {
-   display: inline-block;
-   background: url("../img/euphoria-one-img.jpg") no-repeat,
-      url("../img/euphoria-two-img.png") 614px 0 no-repeat;
    border-radius: 8px;
+   background: url("../img/euphoria-one-img.jpg") 0 0 no-repeat,
+   url("../img/euphoria-two-img.png") 614px 0 no-repeat;
 }
 
-.euphoria-content-text {
-   max-width: 50%;
-   display: inline-block;
-   padding: 183px 74px 174px 74px;
+.euphoria-content-one {
+   max-width: 614px;
+   max-height: 640px;
+   padding: 183px 74px;
 }
+
+
 
 .euphoria-title {
    font-family: "Core Sans C", sans-serif;
@@ -309,9 +367,10 @@ body {
 }
 
 .euphoria-text {
+   display: inline-block;
    color: white;
    font-size: 20px;
-   font-family: "Causten";
+   font-family: "Causten", sans-serif;
    font-weight: 300;
    letter-spacing: 1px;
    margin-bottom: 50px;
@@ -323,10 +382,8 @@ body {
    text-transform: capitalize;
    color: #3C4242;
    font-size: 18px;
-   font-family: Causten;
+   font-family: "Causten", sans-serif;
    font-weight: 600;
-   max-width: 168px;
-   max-height: 46px;
    border-radius: 8px;
    padding: 12px 44px;
    background-color: white;

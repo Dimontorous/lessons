@@ -199,16 +199,18 @@ body {
    max-width: 882px;
    padding: 0 15px;
    margin: 0 auto 47px;
+   text-align: center;
 }
 
 .discover-sub-title {
-   background: url("../img/square.png") 352px 5px no-repeat;
+   background: url("../img/square.png")0 5px no-repeat;
    margin-bottom: 14px;
    font-weight: 500;
    color: #37393F;
    text-transform: capitalize;
    line-height: 1.2;
-   padding-left: 370px;
+   padding-left: 18px;
+   display: inline-block;
 }
 
 .discover-title {
@@ -338,22 +340,32 @@ body {
 
 
 
-
-.euphoria {
+.euphoria-container{
    max-width: 1270px;
    margin: 0 auto 100px;
    padding: 0 15px;
-   border-radius: 8px;
-   background: url("../img/euphoria-one-img.jpg") 0 0 no-repeat,
-   url("../img/euphoria-two-img.png") 614px 0 no-repeat;
+}
+.euphoria {
+   border-radius: 10px;
+   font-size: 0;
 }
 
 .euphoria-content-one {
+   display: inline-block;
    max-width: 614px;
-   max-height: 640px;
-   padding: 183px 74px;
+   min-height: 640px;
+   padding: 183px 74px 175px;
+   background: url("../img/euphoria-one-img.jpg") 0 0 no-repeat;
 }
 
+.euphoria-content-two{
+   vertical-align: top;
+   max-width: 626px;
+   width: 100%;
+   height: 640px;
+   background: url("../img/euphoria-two-img.png") 0 0 no-repeat;
+   display: inline-block;
+}
 
 
 .euphoria-title {

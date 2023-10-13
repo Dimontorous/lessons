@@ -11,9 +11,56 @@ body {
 
 .header {
    margin-bottom: 100px;
+   padding: 0 15px;
 }
 
 
+.main-title{
+   max-width: 700px;
+   margin: 0 auto 50px;
+   font-size: 60px;
+   color: #5109cd;
+   text-shadow: 3px 3px 2px;
+   text-transform: uppercase;
+}
+.link{
+   color: #40DDB6;
+   font-size: 25px;
+   display: inline-block;
+}
+
+.link:not(:last-child){
+   margin-bottom: 10px;
+   margin-right: 25px;
+}
+
+.link::before{
+   content: "";
+   display: inline-block;
+   background-color: #6B77E5;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   vertical-align: middle;
+   margin-right: 15px;
+}
+
+.link:hover{
+   color: #e90945;
+}
+
+.link:hover::before{
+   background-color: #d70c0c;
+}
+.link:active{
+   color: #000;
+}
+.link:visited{
+   color: #5e0f96;
+}
+.link:focus{
+   outline: 2px dotted rgb(168, 10, 231);
+}
 
 .business {
    max-width: 722px;
@@ -204,6 +251,10 @@ body {
    margin-bottom: 31px;
 }
 
+.about-list:hover{
+   opacity: 0.8;
+   color: #22cf0f;
+}
 
 .about-list-title {
    display: inline-block;
@@ -380,6 +431,14 @@ body {
    vertical-align: top;
 }
 
+.jewels-title::after{
+   content: "";
+   display: block;
+   background: url("../img/line.png") 0 0 no-repeat;
+   height: 3px;
+   width: 80%;
+}
+
 
 .jewels-images {
    display: inline-block;
@@ -393,11 +452,20 @@ body {
    margin-right: 45px;
    vertical-align: top;
 }
+
+.img-block{
+   border: 1px solid black;
+   max-width: 334px;
+   margin-bottom: 25px;
+}
+
 .jewels-img-one img{
    margin: 9px -10px -9px 10px;
+   width: 100%;
 }
 .jewels-img-two img{
    margin: 9px -10px -9px 10px;
+   width: 100%;
 }
 
 .jewels-one-text {
@@ -427,8 +495,186 @@ body {
    color: black;
 }
 
-.img-block{
-   border: 1px solid black;
-   max-width: 334px;
-   margin-bottom: 25px;
+
+
+
+.jewels-link-products:hover{
+   display: inline-block;
+   padding: 5px;
+   background-color: #0cef5c;
+   color: #d70c0c;
+   border-radius: 10px;
+   box-shadow: inset -2px 2px 2px;
+}
+
+
+
+
+.footer{
+   padding: 0 15px;
+}
+
+
+
+.target {
+   max-width: 800px;
+   margin: 0 auto 100px;
+   padding: 0 15px;
+}
+
+.target-link {
+   font-size: 20px;
+   font-weight: 500;
+   color: #d40f0f;
+
+}
+
+
+
+.target-div {
+   max-width: 500px;
+   min-height: 50px;
+   visibility: hidden;
+}
+.green {
+   background-color: #065406;
+}
+.blue {
+   background-color: #3b0c86;
+}
+.yellow {
+   background-color: #89f00c;
+}
+
+
+
+.target-div:target {
+   visibility: visible;
+}
+
+
+
+.game {
+   max-width: 1200px;
+   min-height: 800px;
+   padding: 0 15px;
+   margin: 0 auto 100px;
+   font-size: 0;
+}
+.backgraund{
+   width: 500px;
+   height: 500px; 
+}   
+
+
+.game-line {
+   visibility: hidden;
+}
+
+.game-line-1 {
+   width: 50px;
+   height: 70px;
+   background-color: #20e00b;
+}
+
+
+.game-line-1:hover + .game-line-2,
+.game-line-2:hover{
+   visibility: visible;
+   background-color: #da0cde;
+}
+
+.game-line-2 {
+   width: 100px;
+   height: 40px;
+   display: inline-block;
+}
+
+.game-line-3 {
+   width: 750px;
+   height: 40px;
+   display: inline-block;
+}
+
+.game-line-2:hover + .game-line-3,
+.game-line-3:hover{
+   background-color: #da0cde;
+   visibility: visible;
+}
+
+.game-line-2:hover ~ .game-line-5,
+.game-line-4:hover{
+   background-color: #da0cde;
+   visibility: visible;
+}
+
+.game-line-3:hover + .game-line-4,
+.game-line-4:hover{
+   background-color: #da0cde;
+   visibility: visible;
+}
+
+.game-line-4 {
+   width: 40px;
+   height: 300px;
+   display: inline-block;
+   vertical-align: top;
+}
+
+.game-line-4:hover ~ .game-line-8,
+.game-line-5:hover{
+   background-color: #da0cde;
+   visibility: visible;
+}
+
+.game-line-4:hover + .game-line-5,
+.game-line-5:hover{
+   background-color: #da0cde;
+   visibility: visible;
+}
+
+.game-line-5 {
+   width: 890px;
+   height: 40px;
+}
+
+.game-line-5:hover + .game-line-6,
+.game-line-6:hover{
+   background-color: #da0cde;
+   visibility: visible;
+}
+
+.game-line-6 {
+   height: 80px;
+   width: 40px;
+   display: inline-block;
+}
+
+.game-line-6:hover + .game-line-7,
+.game-line-7:hover{
+   background-color: #da0cde;
+   visibility: visible;
+}
+
+.game-line-7 {
+   height: 40px;
+   width: 200px;
+   display: inline-block;
+}
+
+.game-line-7:hover + .game-line-8,
+.game-line-8:hover{
+   background-color: #19248a;
+   visibility: visible;
+}
+
+.game-line-8 {
+   height: 40px;
+   width: 40px;
+   display: inline-block;
+   background-color: #19248a;
+}
+
+.game-line-8:hover + .backgraund{
+   background: url("../img/euphoria-one-img.jpg") center / cover no-repeat;
 }

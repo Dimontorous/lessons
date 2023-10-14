@@ -62,6 +62,7 @@ body {
    outline: 2px dotted rgb(168, 10, 231);
 }
 
+
 .business {
    max-width: 722px;
    margin: 0 auto 100px;
@@ -164,6 +165,8 @@ body {
    vertical-align: middle;
    margin-right: 8px;
    transition: 0.5s;
+   border-radius: 50%;
+   overflow: hidden;
 }
 
 .benefits-list:hover:before{
@@ -274,6 +277,8 @@ body {
    background: url("../img/check-mark.svg") center / cover no-repeat;
    margin-right: 19px;
    vertical-align: middle;
+   border-radius: 50%;
+   overflow: hidden;
 }
 
 
@@ -384,6 +389,8 @@ body {
    width: 72px;
    height: 72px;
    margin-bottom: -38px;
+   border-radius: 50%;
+   overflow: hidden;
 }
 
 .icon-one:before{

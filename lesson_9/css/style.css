@@ -90,7 +90,7 @@ body {
 
 
 
-.sub-title {
+.business-sub-title {
    font-family: Poppins, sans-serif;
    font-size: 20px;
    font-weight: 600;
@@ -160,7 +160,7 @@ body {
    display: inline-block;
    width: 27px;
    height: 27px;
-   background: url("../img/check-mark.svg") 0 0 no-repeat;
+   background: url("../img/check-mark.svg") center / cover no-repeat;
    vertical-align: middle;
    margin-right: 8px;
    transition: 0.5s;
@@ -209,13 +209,13 @@ body {
    line-height: 1.2;
 }
 
-.about-sub-title::before{
+.sub-title::before{
    content: "";
    display: inline-block;
    width: 12px;
    height: 12px;
    margin-right: 6px;
-   background: url("../img/square.png") 0 0 no-repeat;
+   background: url("../img/square.png") center / cover no-repeat;
    vertical-align: middle;
 }
 
@@ -251,7 +251,7 @@ body {
    margin-bottom: 31px;
 }
 
-.about-list:hover{
+.about-list:hover > *{
    opacity: 0.8;
    color: #22cf0f;
 }
@@ -271,7 +271,7 @@ body {
    width: 27px;
    height: 27px;
    display: inline-block;
-   background: url("../img/check-mark.svg") 0 0 no-repeat;
+   background: url("../img/check-mark.svg") center / cover no-repeat;
    margin-right: 19px;
    vertical-align: middle;
 }
@@ -328,15 +328,7 @@ body {
    text-transform: capitalize;
 }
 
-.work-sub-title::before{
-   display: inline-block;
-   content: "";
-   width: 12px;
-   height: 12px;
-   background: url("../img/square.png") no-repeat;
-   margin-right: 6px;
-   vertical-align: middle;
-}
+
 
 
 .work-title {
@@ -365,7 +357,7 @@ body {
    text-align: center;
 }
 
-.work-link:not(:last-child){
+.content-list:not(:last-child){
    margin-right: 31px;
 }
 
@@ -395,18 +387,18 @@ body {
 }
 
 .icon-one:before{
-   background: url("../img/work-icon-one.png") no-repeat;
+   background: url("../img/work-icon-one.png") center / contain no-repeat;
 }
 
 .icon-two::before{
-   background: url("../img/work-icon-two.png") no-repeat;
+   background: url("../img/work-icon-two.png") center / cover no-repeat;
 }
 
 .icon-three::before{
-   background: url("../img/work-icon-three.png") no-repeat;
+   background: url("../img/work-icon-three.png") center / cover no-repeat;
 }
 
-.work-link:hover{
+.content-list:hover{
    opacity: 0.7;
 }
 
@@ -459,21 +451,26 @@ body {
    margin-bottom: 25px;
 }
 
-.jewels-img-one img{
-   margin: 9px -10px -9px 10px;
-   width: 100%;
-}
-.jewels-img-two img{
-   margin: 9px -10px -9px 10px;
+.img-block img{
    width: 100%;
 }
 
-.jewels-one-text {
+.jewels-img-one img{
+   margin: 9px -10px -9px 10px;
+}
+.jewels-img-two img{
+   margin: 9px -10px -9px 10px;
+}
+
+.jewels-text {
    font-size: 24px;
    color: black;
    line-height: 1.4;
 }
 
+.jewels-text p:not(:last-child){
+   margin-bottom: 4px;
+}
 
 .jewels-img-two {
    display: inline-block;
@@ -488,12 +485,6 @@ body {
    margin-bottom: 31px;
 }
 
-
-.jewels-two-text {
-   font-size: 24px;
-   line-height: 1.4;
-   color: black;
-}
 
 
 

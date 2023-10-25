@@ -190,9 +190,9 @@ body {
 
 
 .discover {
-   max-width: 1250px;
+   max-width: 1252px;
    margin: 0 auto 100px;
-   padding: 15px;
+   padding: 0 15px;
 }
 
 .discover-head {
@@ -214,7 +214,6 @@ body {
 }
 
 .discover-title {
-   text-align: center;
    margin-bottom: 14px;
    font-family: "Poppins", sans-serif;
    font-size: 40px;
@@ -224,17 +223,15 @@ body {
 }
 
 .discover-text {
-   max-width: 100%;
    line-height: 1.47;
-   text-align: center;
 }
 
 
 
 .card-block {
-   max-width: 100%;
+   max-width: 1222px;
    margin: 0 auto;
-
+   font-size: 0;
 }
 
 .card-title {
@@ -243,6 +240,7 @@ body {
    font-size: 20px;
    line-height: 1.27;
    font-weight: 600;
+   margin-bottom: 10px;
 }
 
 .card-sub-title {
@@ -254,35 +252,44 @@ body {
 
 .card {
    display: inline-block;
-   max-width: 656px;
-   margin-left: 34px;
-   height: 582px;
-   padding-top: 502px;
-   padding-right: 160px;
+   max-width: 384px;
+   width: 100%;
+   margin-right: 34px;
+   margin-bottom: 58px;
 }
 
+.card-block :nth-child(3n + 3){
+   margin-right: 0;
+}
+
+.card-img{
+   height: 501px;
+   margin-bottom: 24px;
+}
+
+
 .card-one {
-   background: url("../img/discover-img-one.png") no-repeat;
+   background: url("../img/discover-img-one.png") center / cover no-repeat;
 }
 
 .card-two {
-   background: url("../img/discover-img-two.png") no-repeat;
+   background: url("../img/discover-img-two.png") center / cover no-repeat;
 }
 
 .card-three {
-   background: url("../img/discover-img-three.png") no-repeat;
+   background: url("../img/discover-img-three.png") center / cover no-repeat;
 }
 
 .card-four {
-   background: url("../img/discover-img-four.png") no-repeat;
+   background: url("../img/discover-img-four.png") center / cover no-repeat;
 }
 
 .card-five {
-   background: url("../img/discover-img-five.png") no-repeat;
+   background: url("../img/discover-img-five.png") center / cover no-repeat;
 }
 
 .card-six {
-   background: url("../img/discover-img-six.png") no-repeat;
+   background: url("../img/discover-img-six.png") center / cover no-repeat;
 }
 
 
@@ -344,18 +351,21 @@ body {
    max-width: 1270px;
    margin: 0 auto 100px;
    padding: 0 15px;
-}
-.euphoria {
-   border-radius: 10px;
+   border-radius: 15px;
    font-size: 0;
+   overflow: hidden;
 }
+/* .euphoria { */
+   /* border-radius: 10px; */
+   /* font-size: 0; */
+/* } */
 
 .euphoria-content-one {
    display: inline-block;
    max-width: 614px;
    min-height: 640px;
    padding: 183px 74px 175px;
-   background: url("../img/euphoria-one-img.jpg") 0 0 no-repeat;
+   background: url("../img/euphoria-one-img.jpg") center / cover no-repeat;
 }
 
 .euphoria-content-two{
@@ -363,7 +373,7 @@ body {
    max-width: 626px;
    width: 100%;
    height: 640px;
-   background: url("../img/euphoria-two-img.png") 0 0 no-repeat;
+   background: url("../img/euphoria-two-img.png") center / cover no-repeat;
    display: inline-block;
 }
 

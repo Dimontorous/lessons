@@ -1,0 +1,11 @@
+@import url("fonts.css");
+
+/* @import url("reset.css"); */
+
+
+body {
+   font-family: "Causten", sans-serif;
+   font-size: 16px;
+   color: #807D7E;
+}
+

@@ -1,0 +1,319 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+
+body {
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	color: #7D7D7D;
+}
+
+.wrapper{
+	overflow: clip;
+	min-height: 100%;
+	padding: 0 10px;
+}
+
+
+
+.header {
+	background-color: rgb(113, 19, 200);
+	padding: 10px;
+	height: 70px;
+
+}
+
+.header--other {
+	margin-bottom: 100px;
+	position: fixed;
+	z-index: 99;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+
+.header__container {
+	max-width: 1250px;
+	padding: 0 15px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+.header__item {
+	display: inline-block;
+	width: 1220px;
+	margin: 0 auto;
+
+}
+.header__list {
+	display: inline-block;
+	position: relative;
+}
+
+.header__list:not(:last-child){
+	margin-right: 35px;
+}
+
+
+.header__link {
+	display: inline-block;
+	padding: 10px;
+	background-color: #06ef35;
+	color:#fff;
+	border-radius: 10px;
+	border: 1px solid red;
+	box-shadow: inset 2px 2px 5px 2px red;
+}
+
+.header__link:hover{
+	background-color: #07a154;
+	color: #05b6e8;
+}
+
+.header__list:hover .list__one-item{
+	visibility: visible;
+}
+
+.list__one-item {
+	position: absolute;
+	visibility: hidden;
+	left: 0;
+	top: 100%;
+	padding-top: 10px;
+}
+
+.list__one-list {
+	display: inline-block;
+	position: relative;
+	background-color: #0a38f1;
+	width: 130px;
+}
+
+.list__one-list:hover .list__two-list{
+	visibility: visible;
+}
+
+.list__link {
+	display: inline-block;
+	padding: 5px 10px;
+	color: #fff;
+}
+
+.list__link:hover{
+	border-radius: 10px;
+	color: #500363;
+	background-color: #4870ea;
+}
+
+.list__two-item {
+	position: absolute;
+	visibility: hidden;
+	top: 0;
+	left: 100%;
+}
+.list__two-list {
+	display: inline-block;
+	width: 130px;
+}
+.list__two-link {
+	display: inline-block;
+	background-color: #500404;
+	padding: 5px 10px;
+	color: #fff;
+}
+
+.list__two-link:hover{
+	text-decoration: underline;
+	color: #0699e9;
+	border-radius: 10px;
+	background-color: #e209b7;
+}
+
+.main__container{
+	padding-top: 150px;
+}
+
+.sticky--margin{
+	max-width: 1220px;
+	margin: 0 auto;
+	margin-bottom: 100px;
+}
+
+
+.sticky__aside{
+	display: inline-block;
+	position: sticky;
+	top: 70px;
+	left: 0;
+}
+
+.sticky__list {
+	display: inline-block;
+	background-color: #2a0daa;
+	padding: 10px;
+	border-radius: 10px;
+}
+.sticky__item {
+	position: relative;
+	padding: 10px;
+	background-color: #32a305;
+	
+}
+
+.sticky__link {
+	display: inline-block;
+	color: #fff;
+	padding: 5px;
+}
+
+.sticky__link:hover{
+	border-radius: 10px;
+	color: #7a0404;
+	background-color: #ffffff;
+}
+
+.sticky__item:hover .item-sticky__item{
+	visibility: visible;
+}
+
+.item-sticky__list {
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	width: 160px;
+}
+.item-sticky__item {
+	background-color: #0d0732;
+
+}
+.item-sticky__link {
+	display: inline-block;
+	padding: 10px;
+	color: #e70b0b;
+	padding-left: 20px;
+	position: relative;
+}
+
+.item-sticky__link:hover{
+	background-color: #614242;
+	color: #3a0505;
+}
+
+/* .sticky__link, */
+.item-sticky__link::before{
+	display: inline-block;
+	content: "";
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: blueviolet;
+	position: absolute;
+	top: 10px;
+	left: 5px;
+	padding-left: 10px;
+}
+
+.sticky__content{
+	display: inline-block;
+	vertical-align: top;
+	max-width: 1000px;
+}
+
+
+.cards {
+	max-width: 1250px;
+	padding: 0 15px;
+	font-size: 0;
+}
+
+.cards--block {
+	margin: 0 auto;
+}
+
+.cards__list {
+	display: inline-block;
+	font-size: 18px;
+	margin-right: 31px;
+	margin-bottom: 31px;
+}
+
+.cards__list:nth-child(3n + 3){
+	margin-right: 0;
+}
+
+.card:hover .icon{
+	visibility: visible;
+}
+
+.card:hover .card__block{
+	/* background-color: rgba(107, 119, 229, 0.7); */
+	visibility: visible;
+}
+
+.card__content {
+	position: relative;
+	max-width: 386px;
+}
+.card__img {
+	width: 100%;
+	height: 532px;
+}
+.card__text {
+	position: absolute;
+	padding: 24px 5px;
+	text-align: center;
+	bottom: 24px;
+	left: 22px;
+	background-color: #ffffff;
+	min-width: 341px;
+	z-index: 1;
+}
+.card__name {
+	color: #37393F;
+	font-size: 25px;
+	font-family: Poppins, sans-serif;
+	font-weight: 600;
+	margin-bottom: 4px;
+	text-transform: capitalize;
+}
+.card__profession {
+	line-height: 1.35;
+	text-transform: capitalize;
+}
+
+
+.card__icons {
+	position: absolute;
+	visibility: hidden;
+	bottom: 241px;
+	left: 107px;
+}
+
+.icon__list {
+	display: inline-block;
+}
+.icon__img {
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+}
+
+.icon__img--radius{
+	width: 45px;
+	height: 45px;
+
+}
+
+.card__block{
+	width: 386px;
+	height: 532px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: rgba(107, 119, 229, 0.7);
+	visibility: hidden;
+}

@@ -19,7 +19,7 @@ body {
 
 .header {
 	background-color: rgb(113, 19, 200);
-	padding: 10px;
+	padding: 15px;
 	height: 70px;
 
 }
@@ -59,7 +59,7 @@ body {
 
 
 .header__link {
-	display: inline-block;
+	/* display: inline-block; */
 	padding: 10px;
 	background-color: #06ef35;
 	color:#fff;
@@ -97,7 +97,7 @@ body {
 }
 
 .list__link {
-	display: inline-block;
+	/* display: inline-block; */
 	padding: 5px 10px;
 	color: #fff;
 }
@@ -119,7 +119,7 @@ body {
 	width: 130px;
 }
 .list__two-link {
-	display: inline-block;
+	/* display: inline-block; */
 	background-color: #500404;
 	padding: 5px 10px;
 	color: #fff;
@@ -164,7 +164,7 @@ body {
 }
 
 .sticky__link {
-	display: inline-block;
+	/* display: inline-block; */
 	color: #fff;
 	padding: 5px;
 }
@@ -191,7 +191,7 @@ body {
 
 }
 .item-sticky__link {
-	display: inline-block;
+	/* display: inline-block; */
 	padding: 10px;
 	color: #e70b0b;
 	padding-left: 20px;
@@ -205,7 +205,7 @@ body {
 
 /* .sticky__link, */
 .item-sticky__link::before{
-	display: inline-block;
+	/* display: inline-block; */
 	content: "";
 	width: 10px;
 	height: 10px;
@@ -244,12 +244,16 @@ body {
 .cards__list {
 	display: inline-block;
 	font-size: 18px;
-	margin-right: 31px;
-	margin-bottom: 31px;
+	/* margin-right: 31px; */
+	/* margin-bottom: 31px; */
 }
 
-.cards__list:nth-child(3n + 3){
-	margin-right: 0;
+.cards__list:not(:nth-child(3n + 3)){
+	margin-right: 31px;
+}
+
+.cards__list:not(:nth-child(n + 4)){
+	margin-bottom: 31px;
 }
 
 .card:hover .icon{
@@ -262,7 +266,7 @@ body {
 
 .card__content::before{
 	content: "";
-	display: inline-block;
+	/* display: inline-block; */
 	width: 386px;
 	height: 532px;
 	position: absolute;
@@ -278,10 +282,14 @@ body {
 .card__content {
 	position: relative;
 	max-width: 386px;
+	height: 532px;
 }
+
 .card__img {
 	width: 100%;
+	height: 100%;
 }
+
 .card__text {
 	position: absolute;
 	padding: 24px 5px;
@@ -289,9 +297,11 @@ body {
 	bottom: 24px;
 	left: 22px;
 	background-color: #ffffff;
-	min-width: 341px;
+	max-width: 341px;
+	width: 100%;
 	z-index: 1;
 }
+
 .card__name {
 	color: #37393F;
 	font-size: 25px;
@@ -300,6 +310,7 @@ body {
 	margin-bottom: 4px;
 	text-transform: capitalize;
 }
+
 .card__profession {
 	line-height: 1.35;
 	text-transform: capitalize;

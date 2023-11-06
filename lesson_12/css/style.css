@@ -25,7 +25,7 @@ body {
 }
 
 .header--other {
-	margin-bottom: 100px;
+	/* margin-bottom: 100px; */
 	position: fixed;
 	z-index: 99;
 	width: 100%;
@@ -68,7 +68,7 @@ body {
 	box-shadow: inset 2px 2px 5px 2px red;
 }
 
-.header__link:hover{
+.header__list:hover .header__link{
 	background-color: #07a154;
 	color: #05b6e8;
 }
@@ -102,7 +102,7 @@ body {
 	color: #fff;
 }
 
-.list__link:hover{
+.list__one-list:hover .list__link{
 	border-radius: 10px;
 	color: #500363;
 	background-color: #4870ea;
@@ -169,7 +169,7 @@ body {
 	padding: 5px;
 }
 
-.sticky__link:hover{
+.sticky__item:hover .sticky__link{
 	border-radius: 10px;
 	color: #7a0404;
 	background-color: #ffffff;
@@ -260,11 +260,11 @@ body {
 	visibility: visible;
 }
 
-.card:hover .card__content::before{
+.card:hover::before{
 	visibility: visible;
 }
 
-.card__content::before{
+.card::before{
 	content: "";
 	/* display: inline-block; */
 	width: 386px;
@@ -279,7 +279,7 @@ body {
 
 
 
-.card__content {
+.card {
 	position: relative;
 	max-width: 386px;
 	height: 532px;
@@ -331,7 +331,10 @@ body {
 	width: 50px;
 	height: 50px;
 	overflow: hidden;
+	position: relative;
 }
+
+
 
 .icon__img--radius{
 	width: 45px;

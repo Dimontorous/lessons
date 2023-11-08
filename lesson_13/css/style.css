@@ -128,7 +128,7 @@ body {
 	background-color: #e209b7;
 }
 
-.main__container{
+.content__container{
 	max-width: 1200px;
 	padding-top: 150px;
 	margin: 0 auto;
@@ -139,7 +139,7 @@ body {
 
 .transform {
 	padding: 15px;
-	font-size: 10;
+	font-size: 0;
 }
 
 .transform--margin{

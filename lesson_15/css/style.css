@@ -99,7 +99,7 @@ body {
 	color: #333333;
 }
 
-.header__language::after {
+.header__link::after {
 	position: absolute;
 	top: 20px;
 	right: 0;
@@ -107,8 +107,12 @@ body {
 	width: 10px;
 	height: 5px;
 	background: url("../img/icons/arrow.svg") center / cover no-repeat;
+	transition: transform 0.3s linear;
 }
 
+.header__language:hover .header__link::after{
+	transform: rotate(-180deg);
+}
 
 .header__lists {
 	position: absolute;
@@ -136,6 +140,7 @@ body {
 	border-radius: 8px;
 	color: bisque;
 }
+
 
 .header__login {
 	background-color: rgba(138, 51, 253, 1);
@@ -505,4 +510,20 @@ body {
 
 .view__button:hover {
 	background-color: rgba(139, 51, 253, 0.578);
+}
+
+.main--margin{
+	margin-bottom: 50px;
+}
+
+.footer{
+	padding: 40px;
+	background-color: rgba(13, 239, 239, 0.236);
+}
+
+.footer__title{
+	text-align: center;
+	font-size: 40px;
+	color: rgba(138, 51, 253, 1);
+	text-shadow: 2px 2px 2px;
 }

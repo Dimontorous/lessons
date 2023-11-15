@@ -155,8 +155,8 @@ body {
 
 .header__login:hover {
 	border: 1px solid #3c4242;
-	color: rgba(139, 51, 253, 0.46);
-	background-color: rgba(139, 51, 253, 0.46);
+	color: white;
+	background-color: rgba(87, 10, 188, 0.786);
 }
 
 .header__sing {
@@ -188,7 +188,7 @@ body {
 	margin-bottom: 70px;
 	color: #3c4242;
 	font-size: 34px;
-	font-family: "Core Sans C" sans-serif;
+	font-family: "Core Sans C", sans-serif;
 	font-weight: 600;
 	padding-left: 26px;
 	position: relative;

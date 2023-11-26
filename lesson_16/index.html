@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="img/photo-lion.webp" type="image/x-icon">
+	<title>Lesson 16</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__list list">
+					<div class="list__one">
+						<div class="header__logo"></div>
+						<div class="header__search">
+							<input type="text" placeholder="Search" tabindex="1">
+						</div>
+						<ul class=" header__language">
+							<li class="header__item">
+								<a href="#" class="header__link">English (united States)</a>
+								<ul class="header__lists">
+									<li class="header__links">
+										<a href="#" class="header__choose">English</a>
+									</li>
+									<li class="header__links">
+										<a href="#" class="header__choose">Spanish</a>
+									</li>
+									<li class="header__links">
+										<a href="#" class="header__choose">Ukrainian</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="list__two">
+						<a href="#" class="header__login">Login</a>
+						<a href="#" class="header__sing">Sign Up</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page page--margin">
+			<div class="page__container">
+				<div class="info info--margin">
+					<h2 class="info__title">My Info</h2>
+					<h4 class="info__sub-title">Add Address</h4>
+					<form enctype="multipart/form-data" method="GET" action="#" class="form">
+						<div class="form__block">
+							<div class="form__item">
+								<label class="form__label" for="first">First Name*</label>
+								<input class="form__input" type="text" id="first" required placeholder="First Name" tabindex="2"
+									name="f-n">
+							</div>
+							<div class="form__item">
+								<label class="form__label" for="last">Last Name*</label>
+								<input class="form__input" type="text" id="last" required placeholder="Last Name" tabindex="3"
+									name="f-n">
+							</div>
+							<div class="form__item">
+								<label class="form__label" for="country">Country / Region*</label>
+								<input class="form__input" type="text" id="country" required placeholder="Country / Region"
+									tabindex="4" name="c">
+							</div>
+							<div class="form__item">
+								<label class="form__label" for="company">Company Name</label>
+								<input class="form__input" type="text" id="company" placeholder="Company (optional)"
+									tabindex="5" name="com">
+							</div>
+							<div class="form__item">
+								<label class="form__label" for="street">Street Address*</label>
+								<input class="form__input" type="text" id="street" required
+									placeholder="House number and street name" tabindex="6" name="s">
+							</div>
+							<div class="form__item">
+								<label class="form__label" for="art">Apt, suite, unit</label>
+								<input class="form__input" type="text" id="art"
+									placeholder="apartment, suite, unit, etc. (optional)" tabindex="7" name="art">
+							</div>
+							<div class="form__item">
+								<label class="form__label" for="city">City*</label>
+								<input class="form__input" type="text" id="city" required placeholder="Town / City" tabindex="8"
+									name="city">
+							</div>
+							<div class="form__item">
+								<label class="form__label" for="select">State*</label>
+								<select class="form__select" required name="select" id="select">
+									<option class="form__option" selected value="01">State</option>
+									<option class="form__option" value="02">Region</option>
+								</select>
+							</div>
+							<div class="form__item">
+								<label class="form__label" for="tel">Phone*</label>
+								<input class="form__input" type="tel" id="tel" required placeholder="Phone" tabindex="10"
+									name="phone">
+							</div>
+							<div class="form__item">
+								<label class="form__label" for="password">Postal Code*</label>
+								<input class="form__input" type="password" id="password" required placeholder="Postal Code"
+									tabindex="11" name="phone">
+							</div>
+							<div class="form__delivery">
+								<label class="form__label" for="delivery">Delivery Instruction</label>
+								<textarea class="form__textarea" name="delivery" id="delivery"
+									placeholder="Delivery Instruction"></textarea>
+							</div>
+							<div class="form__choose">
+								<div class="form__check">
+									<input class="form__checkbox" type="checkbox" id="shipping">
+									<label class="form__set" for="shipping">Set as default shipping address</label>
+								</div>
+								<div class="form__check">
+									<input class="form__checkbox" type="checkbox" id="billing">
+									<label class="form__set" for="billing">Set as default billing address</label>
+								</div>
+							</div>
+						</div>
+						<div class="form__buttons">
+							<button class="button" type="submit">Save</button>
+							<button class="button button--color" type="reset">Cancel</button>
+						</div>
+					</form>
+				</div>
+				<div class="request request--margin">
+					<div class="request__head">
+						<h4 class="request__sub-title">Contact Us</h4>
+						<h2 class="request__title">Request A Call Back !</h2>
+					</div>
+					<form enctype="multipart/form-data" method="GET" id="some-form" action="#"
+						class="request__form request-form">
+						<div class="request-form__block">
+							<div class="request-form__item">
+								<input class="request__input" type="text" required placeholder="Your Name">
+							</div>
+							<div class="request-form__item">
+								<input class="request__input" type="email" required placeholder="Email Address">
+							</div>
+							<div class="request-form__item">
+								<input class="request__input" type="tel" required placeholder="Phone Number">
+							</div>
+							<div class="request-form__item">
+								<input class="request__input" type="text" required placeholder="Subject">
+							</div>
+							<div class="request-form__item request-form__item--textarea">
+								<textarea class="request-form__textarea" placeholder="Message..."></textarea>
+							</div>
+						</div>
+						<div class="request-form__btn">
+							<button form="some-form" class="request-form__button" type="submit">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<h1 class="footer__title">My home work №16</h1>
+		</footer>
+	</div>
+</body>
+
+</html>

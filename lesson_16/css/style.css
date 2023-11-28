@@ -452,7 +452,7 @@ body {
 	outline: 2px #bebcbd solid;
 	flex: 0 0 15px;
 	background-color: #fff;
-	transition: imabackground-color 0.3s;
+	transition: background-color 0.3s;
 	content: "";
 }
 

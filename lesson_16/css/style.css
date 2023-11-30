@@ -438,7 +438,12 @@ body {
 }
 
 .checkbox__input:checked + .checkbox__label::before {
-	background-color: blueviolet;
+	background: url("../img/icons/checkmark.svg") center / contain no-repeat;
+	width: 15px;
+	height: 15px;
+	/* outline: 2px #bebcbd solid; */
+	flex: 0 0 15px;
+	content: "";
 }
 
 .checkbox__label {
@@ -451,8 +456,7 @@ body {
 	height: 15px;
 	outline: 2px #bebcbd solid;
 	flex: 0 0 15px;
-	background-color: #fff;
-	transition: background-color 0.3s;
+	transition: background 0.3s linear;
 	content: "";
 }
 
@@ -488,7 +492,7 @@ body {
 	/* border-bottom: 1px solid #BEBCBD; */
 }
 
-.shipping__body:not(:last-child)::after{
+.shipping__body:not(:last-of-type)::after{
 	position: absolute;
 	left: 0;
 	top: 100%;

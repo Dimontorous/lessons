@@ -183,39 +183,41 @@
 							<input type="checkbox" id="checkbox" class="checkbox__input">
 							<label for="checkbox" class="checkbox__label">Save my information for a faster checkout</label>
 						</div>
-						<div class="check__shipping shipping">
-							<div class="shipping__top">
-								<h3 class="shipping__sub-title">Shipping Address</h3>
-								<h5 class="shipping__some-text">Select the address that matches your card or payment method.
-								</h5>
+					</form>
+					<div class="check__shipping shipping">
+						<div class="shipping__top">
+							<h3 class="shipping__sub-title">Shipping Address</h3>
+							<h5 class="shipping__some-text">Select the address that matches your card or payment method.
+							</h5>
+						</div>
+						<div class="shipping__body">
+							<div class="shipping__item">
+								<input type="radio" checked id="some" class="shipping__input" name="address">
+								<label for="some" class="shipping__text">Same as Billing address</label>
 							</div>
-							<div class="shipping__body">
-								<div class="shipping__item">
-									<input type="radio" checked id="some" class="shipping__input" name="address">
-									<label for="some" class="shipping__text">Same as Billing address</label>
-								</div>
-								<div class="shipping__item">
-									<input type="radio" id="different" class="shipping__input" name="address">
-									<label for="different" class="shipping__text">Use a different shipping address</label>
-								</div>
+							<div class="shipping__item">
+								<input type="radio" id="different" class="shipping__input" name="address">
+								<label for="different" class="shipping__text">Use a different shipping address</label>
 							</div>
-							<h3 class="shipping__sub-title">Shipping Method</h3>
-							<div class="shipping__body">
-								<div class="shipping__item">
-									<p class="shipping__text">Arrives by Monday, June 7</p>
-								</div>
-								<div class="shipping__item shipping__item--gap">
-									<div class="shipping__delivery">
-										<p class="shipping__text">Delivery Charges</p>
-										<span class="shipping__text">$5.00</span>
-									</div>
-									<p class="shipping__some-text">Additional fess may apply</p>
-								</div>
+						</div>
+						<h3 class="shipping__sub-title">Shipping Method</h3>
+						<div class="shipping__body">
+							<div class="shipping__item">
+								<p class="shipping__text">Arrives by Monday, June 7</p>
 							</div>
-							<div class="shipping__top">
-								<h3 class="shipping__sub-title">Payment Method</h3>
-								<h5 class="shipping__some-text">All transactions are secure and encrypted.</h5>
+							<div class="shipping__item shipping__item--gap">
+								<div class="shipping__delivery">
+									<p class="shipping__text">Delivery Charges</p>
+									<span class="shipping__text">$5.00</span>
+								</div>
+								<p class="shipping__some-text">Additional fess may apply</p>
 							</div>
+						</div>
+						<div class="shipping__top">
+							<h3 class="shipping__sub-title">Payment Method</h3>
+							<h5 class="shipping__some-text">All transactions are secure and encrypted.</h5>
+						</div>
+						<form enctype="multipart/form-data" action="#">
 							<div class="shipping__body shipping__body--other">
 								<div class="shipping__item shipping__item--other">
 									<div class="shipping__block">
@@ -248,8 +250,7 @@
 											<input type="text" required class="shipping__pay" placeholder="Name of card">
 										</div>
 										<div class="inputs__body">
-											<input type="date" required class="shipping__pay"
-												>
+											<input type="date" required class="shipping__pay">
 										</div>
 										<div class="inputs__body">
 											<input type="password" required class="shipping__pay" placeholder="Security Code">
@@ -271,19 +272,13 @@
 										<label for="paypal" class="shipping__text">Paypol</label>
 									</div>
 								</div>
-								
 							</div>
 							<div class="shipping__button">
 								<button type="submit" class="shipping__clik">Pay Now</button>
 							</div>
-
-							
-							
-						</div>
-						
-					</form>
+						</form>
+					</div>
 				</div>
-			</div>
 		</main>
 		<footer class="footer">
 			<h1 class="footer__title">My home work №16</h1>

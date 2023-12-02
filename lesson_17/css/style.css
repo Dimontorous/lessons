@@ -37,6 +37,7 @@ body {
 	min-height: 70px;
 	display: flex;
 	align-items: center;
+	z-index: 99;
 }
 
 .header__container{

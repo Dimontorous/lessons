@@ -294,7 +294,7 @@ body {
 	transition: color 0.3s ease-out;
 }
 
-.rings__button {
+.product__button {
 	padding: 12px 42px;
 	background-color: #ff7a49;
 	text-align: center;
@@ -354,7 +354,7 @@ body {
 		color: rgb(237, 6, 33);
 		text-decoration: underline;
 	}
-	.rings__button:hover {
+	.product__button:hover {
 		background-color: #d15122;
 	}
 	.rings__img img:hover,

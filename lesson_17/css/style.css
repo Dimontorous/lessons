@@ -13,31 +13,69 @@ body {
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
-	/* row-gap: 100px; */
+	row-gap: 50px;
 }
 
 .wrapper > main {
 	flex-grow: 1;
 }
-/* 
+
 [class*="__container"] {
-	max-width: 1270px;
+	max-width: 1200px;
 	padding: 0 15px;
 	margin: 0 auto;
 	overflow: hidden;
-} */
-
-.header__title {
+}
+.header__container{
 	text-align: center;
-	padding: 20px;
-	line-height: 1.5;
+}
+.header__list {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: burlywood;
+	min-height: 60px;
+	width: 100%;
+	border-bottom: 2px solid blueviolet;
+}
+.header__item {
+	position: relative;
+}
+.header__link {
+	position: relative;
+	padding-bottom: 10px;
 	font-size: 30px;
-	color: #000;
 	font-weight: 700;
-	letter-spacing: 5px;
+	font-family: "Cormorant Infant";
+	color: #000;
+	margin-bottom: 5px;
+	overflow: hidden;
 }
 
-.page{
+.header__link::after{
+	content: "";
+	/* display: block; */
+	height: 3px;
+	width: 100%;
+	background-color: #832525;
+	position: absolute;
+	top: 90%;
+	left: -100%;
+	transition: all 0.5s linear;
+}
+
+@media(any-hover: hover) {
+	.header__item:hover .header__link::after{
+		transform: translateX(100%);
+	}
+	.header__link:hover{
+		color: #d01515;
+	}
+}
+
+.page {
 	display: flex;
 	flex-direction: column;
 	row-gap: 100px;
@@ -49,14 +87,10 @@ body {
 	padding: 100px 0;
 	background: url(../img/raster-img/flower.webp) bottom right no-repeat;
 }
-.popular__container {
-	max-width: 1200px;
-	padding: 0 15px;
-	margin: 0 auto;
-}
+
 .popular__top {
 	margin-bottom: 60px;
-	/* row-gap: 27px; */
+	text-transform: capitalize;
 }
 .popular__title {
 	margin-bottom: 27px;
@@ -188,10 +222,8 @@ body {
 	font-family: "Cormorant Infant", sans-serif;
 	color: #000;
 }
-.product__container {
-	max-width: 1165px;
-	padding: 0 15px;
-	margin: 0 auto;
+.product__container,
+.our__container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -213,29 +245,36 @@ body {
 	font-weight: 700;
 	line-height: 1.4;
 }
-.product__rings {
+.product__rings,
+.our__body {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0 -15px 76px;
 }
 
-.rings__column {
+.our__body{
+	margin-bottom: 0;
+}
+
+.rings__column,
+.body-our__column {
 	display: flex;
 	flex-direction: column;
-	flex: 1 0 25%;
+	flex: 1 1 25%;
 	padding: 0 15px;
 	row-gap: 17px;
 }
-.rings__img {
+.rings__img,
+.body-our__image {
 	overflow: hidden;
 }
 .rings__text {
 	color: black;
 	font-size: 24px;
 	font-weight: 700;
-	row-gap: 4px;
 }
-.rings__img img {
+.rings__img img,
+.body-our__img {
 	width: 100%;
 	height: 100%;
 	aspect-ratio: 271 / 270;
@@ -244,7 +283,14 @@ body {
 	transition: transform 0.3s linear;
 }
 
-.rings__link{
+.rings__description,
+.body-our__description {
+	margin-bottom: 4px;
+}
+
+.rings__link,
+.body-our__link,
+.list__link {
 	transition: color 0.3s ease-out;
 }
 
@@ -259,86 +305,136 @@ body {
 	transition: background-color 0.3s linear;
 }
 
+.our {
+	background-color: #0e333d;
+	padding: 94px 0;
+	color: white;
+}
+
+.our__top {
+	margin-bottom: 77px;
+	text-align: center;
+}
+.our__title {
+	font-family: "Raleway", sans-serif;
+	font-size: 48px;
+	font-family: "DM Serif Text", sans-serif;
+	line-height: 1.27;
+	text-transform: capitalize;
+}
+.our__sub-title {
+	color: #ebebeb;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.27;
+	margin-bottom: 34px;
+}
+.our__list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 41px;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 1.27;
+}
+
+
+.body-our {
+	font-size: 24px;
+	font-family: "Cormorant Infant", sans-serif;
+	font-weight: 700;
+	line-height: 1.4;
+}
 
 
 @media (any-hover: hover) {
-	.rings__link:hover {
+	.rings__link:hover,
+	.body-our__link:hover,
+	.list__link:hover {
 		color: rgb(237, 6, 33);
 		text-decoration: underline;
 	}
-	.rings__button:hover{
+	.rings__button:hover {
 		background-color: #d15122;
 	}
-	.rings__img img:hover{
+	.rings__img img:hover,
+	.body-our__img:hover {
 		transform: scale(1.05);
 	}
 }
 
-
-
-@media (max-width: 1045px){
-	.page{
+@media (max-width: 1045px) {
+	.page {
 		row-gap: 60px;
 	}
-	.product__top{
+	.product__top,
+	.our__top,
+	.our__sub-title {
 		margin-bottom: 30px;
 	}
-	.product__rings{
+	.product__rings {
 		row-gap: 15px;
 		margin-bottom: 50px;
 	}
-	.rings__column{
-		flex: 0 0 33.333%
+	.body-our{
+		row-gap: 15px;
+	}
+	.rings__column,
+	.body-our__column {
+		flex: 0 0 33.333%;
 	}
 }
 
-@media (max-width: 785px){
-	.page{
+@media (max-width: 785px) {
+	.page {
 		row-gap: 40px;
 	}
-	.product__title{
+	.product__title,
+	.our__title {
 		font-size: 40px;
 	}
-
-	.product__top{
-		margin-bottom: 30px;
+	.our__sub-title{
+		margin-bottom: 20px;
 	}
-	
-	.product__rings{
+	.product__rings {
 		margin-bottom: 35px;
 	}
-
-	.rings__column{
-		flex: 0 0 50%
+	.product__rings,
+	.body-our{
+		row-gap: 35px;
+	}
+	.rings__column,
+	.body-our__column {
+		flex: 0 0 50%;
 	}
 }
 
-
-@media (max-width: 523px){
-	.page{
-		row-gap: 30px;
+@media (max-width: 523px) {
+	.page {
+		row-gap: 40px;
 	}
-	.product__top{
+	.product__top,
+	.our__top{
 		margin-bottom: 10px;
 	}
-	.product__title{
+	.product__title,
+	.our__title {
 		font-size: 35px;
 	}
-	
-	.product__rings{
+
+	.product__rings {
 		margin-bottom: 35px;
 	}
 
-	.rings__column{
-		flex: 0 0 100%
+	.rings__column,
+	.body-our__column {
+		flex: 0 0 100%;
 	}
-	.rings__text{
+	.rings__text,
+	.body-our__text {
 		text-align: center;
 	}
 }
-
-
-
 
 .footer {
 	padding: 40px;

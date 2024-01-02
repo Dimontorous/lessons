@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="img/photo-lion.webp" type="image/x-icon">
+	<title>Lesson 20</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<img src="img/icons/logo.svg" alt="logo" class="header__logo">
+				<div class="header__menu menu">
+					<div class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="#" class="menu__link">Shop</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Men</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Women</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Combos</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Joggers</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="search">
+					<form enctype="multipart/form-data" method="GET" action="#" class="search__form">
+						<div class="search__block">
+							<input type="search" placeholder="Search">
+						</div>
+					</form>
+				</div>
+				<div class="header__actions actions-header">
+					<a href="#" class="actions-header__link">
+						<img src="img/icons/heart.svg" alt="heart">
+					</a>
+					<a href="#" class="actions-header__link">
+						<img src="img/icons/user.svg" alt="profile">
+					</a>
+					<a href="#" class="actions-header__link">
+						<img src="img/icons/shopping-cart.svg" alt="cart">
+					</a>
+					<button class="actions-header__burger">
+						<span></span>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main class="page page--margin">
+			<div class="info info--margin">
+				<div class="info__container">
+					<h2 class="info__title">My Info</h2>
+					<h4 class="info__sub-title">Add Address</h4>
+					<form enctype="multipart/form-data" method="GET" action="#" class="form">
+						<div class="form__block">
+							<div class="form__item">
+								<label class="form__label" for="first">First Name*</label>
+								<input class="form__input" type="text" id="first" required placeholder="First Name" tabindex="2"
+									name="f-n">
+							</div>
+							<div class="form__item">
+								<label class="form__label" for="last">Last Name*</label>
+								<input class="form__input" type="text" id="last" required placeholder="Last Name" tabindex="3"
+									name="f-n">
+							</div>
+							<div class="form__item">
+								<label class="form__label" for="country">Country / Region*</label>
+								<input class="form__input" type="text" id="country" required placeholder="Country / Region"
+									tabindex="4" name="c">
+							</div>
+							<div class="form__item">
+								<label class="form__label" for="company">Company Name</label>
+								<input class="form__input" type="text" id="company" placeholder="Company (optional)"
+									tabindex="5" name="com">
+							</div>
+							<div class="form__item">
+								<label class="form__label" for="street">Street Address*</label>
+								<input class="form__input" type="text" id="street" required
+									placeholder="House number and street name" tabindex="6" name="s">
+							</div>
+							<div class="form__item">
+								<label class="form__label" for="art">Apt, suite, unit</label>
+								<input class="form__input" type="text" id="art"
+									placeholder="apartment, suite, unit, etc. (optional)" tabindex="7" name="art">
+							</div>
+							<div class="form__item">
+								<label class="form__label" for="city">City*</label>
+								<input class="form__input" type="text" id="city" required placeholder="Town / City" tabindex="8"
+									name="city">
+							</div>
+							<div class="form__item">
+								<label class="form__label" for="select">State*</label>
+								<select class="form__select" name="select" id="select">
+									<option class="form__option" selected value="state-01">State</option>
+									<option class="form__option" value="state-02">Region</option>
+								</select>
+							</div>
+							<div class="form__item">
+								<label class="form__label" for="tel">Phone*</label>
+								<input class="form__input" type="tel" id="tel" required placeholder="Phone" tabindex="10"
+									name="phone">
+							</div>
+							<div class="form__item">
+								<label class="form__label" for="password">Postal Code*</label>
+								<input class="form__input" type="password" id="password" required placeholder="Postal Code"
+									tabindex="11" name="phone">
+							</div>
+							<div class="form__delivery">
+								<label class="form__label" for="delivery">Delivery Instruction</label>
+								<textarea class="form__textarea" name="delivery" id="delivery"
+									placeholder="Delivery Instruction"></textarea>
+							</div>
+							<div class="form__choose">
+								<div class="form__check">
+									<input class="form__checkbox" type="checkbox" id="shipping">
+									<label class="form__set" for="shipping">Set as default shipping address</label>
+								</div>
+								<div class="form__check">
+									<input class="form__checkbox" type="checkbox" id="billing">
+									<label class="form__set" for="billing">Set as default billing address</label>
+								</div>
+							</div>
+						</div>
+						<div class="form__buttons">
+							<button class="button" type="submit">Save</button>
+							<button class="button button--color" type="reset">Cancel</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<h1 class="footer__title">My home work №20</h1>
+		</footer>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

@@ -75,14 +75,14 @@ textarea {
   font-family: "Causten";
   src: url("../fonts/causten_medium-webfont.woff2") format("woff2"), url("../fonts/causten_medium-webfont.woff") format("woff");
   font-display: swap;
-  font-family: 500px;
+  font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Causten";
   src: url("../fonts/causten_regular-webfont.woff2") format("woff2"), url("../fonts/causten_regular-webfont.woff") format("woff");
   font-display: swap;
-  font-family: 400px;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {

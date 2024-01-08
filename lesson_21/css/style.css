@@ -488,7 +488,7 @@ input ::placeholder {
 }
 @media (max-width: 550px) {
   .hero {
-    background: url("../img/raster-img/hero.webp") 0 50px/right auto no-repeat;
+    background: url("../img/raster-img/hero.webp") right 50px/cover auto no-repeat;
   }
 }
 .hero__container {
